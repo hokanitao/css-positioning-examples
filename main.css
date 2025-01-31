@@ -77,19 +77,32 @@ header {
 main {
   margin: -10px;
   height: calc(100vh - 30px);
+  margin-bottom: 170px;
+}
+
+.left {
+  display: inline-block;
+  width: 70%;
 }
 
 #main {
-  display: inline-block;
-  min-height: 500px;
-  width: 70%;
+  display: block;
+  min-height: 100vh;
+  /* height: 200vh; */
+  position: relative;
+}
+
+main div button a {
+  position: relative;
 }
 
 main aside {
   display: inline-block;
+  position: sticky;
+  top: 20px;
   margin-top: -70px;
   width: 29%;
-  height: 100%;
+  height: 120%;
   background-color: #1f1f1f;
   vertical-align: top;
 }
@@ -110,19 +123,17 @@ main aside nav ul li {
   margin: 10px;
 }
 
-#backtotop {
+.backtotop {
+  display: block;
+  position: sticky;
+  bottom: 50px;
+  left: 10px;
   background-color: transparent;
   border-color: transparent;
-  margin-left: 30px;
-  display: inline-block;
-  position: fixed; 
-  bottom: 5vh;
-  left: 10px;
 }
 
 #top {
   width: 50px;
-  /* position: fixed; */
 }
 
 footer {
